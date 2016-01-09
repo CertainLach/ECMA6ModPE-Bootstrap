@@ -1,0 +1,7 @@
+game.on("chat",(message)=>{
+    var lines = message.text.split("\n");
+    lines.forEach(line=>{
+        line=line.replace(/&/g,"§");
+        clientMessage(line);
+    });
+});
