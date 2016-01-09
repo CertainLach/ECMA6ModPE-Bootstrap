@@ -248,6 +248,7 @@ function startDestroyBlock(x, y, z, side)
 function projectileHitBlockHook(projectile, blockX, blockY, blockZ, side)
 function modTick()
 function useItem(x, y, z, itemid, blockid, side, itemDamage, blockDamage)
+function procCmd(cmd)
 
 ChatColor.AQUA;
 ChatColor.BEGIN;

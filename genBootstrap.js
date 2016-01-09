@@ -51,7 +51,8 @@ var altNames={
     startDestroyBlock: "level.destroy.start",
     entityRemovedHook: "entity.remove",
     entityAddedHook: "entity.add",
-    projectileHitEntityHook: "projectile.hit.entity"
+    projectileHitEntityHook: "projectile.hit.entity",
+    procCmd: "server.command"
 };
 
 var outBSG="";
@@ -101,6 +102,7 @@ fs.readFile("src/modpescript_dump.txt", (err, content)=>{
             
             
             //Emitter use, ECMASCRIPT6 allowed
+            //console.log(str);
             var outEM=`
                 global._${str.replace(/function /g,"")}{
                     game.emit("${
